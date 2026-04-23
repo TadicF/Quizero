@@ -1,0 +1,256 @@
+{
+  "history": {
+    "easy": [
+      {
+        "question": "Who was the first President of the United States?",
+        "correct": "George Washington",
+        "false": ["Abraham Lincoln", "Napoleon Bonaparte", "Julius Caesar"]
+      },
+      {
+        "question": "Which war ended in 1945?",
+        "correct": "World War II",
+        "false": ["World War I", "Cold War", "Vietnam War"]
+      }
+    ],
+    "intermediate": [
+      {
+        "question": "Who was the leader of the Mongol Empire?",
+        "correct": "Genghis Khan",
+        "false": ["Napoleon Bonaparte", "Julius Caesar", "Winston Churchill"]
+      },
+      {
+        "question": "Which revolution began in 1789?",
+        "correct": "French Revolution",
+        "false": ["Industrial Revolution", "Russian Revolution", "American Revolution"]
+      }
+    ],
+    "hard": [
+      {
+        "question": "Which war was fought between Athens and Sparta?",
+        "correct": "Peloponnesian War",
+        "false": ["Punic Wars", "Hundred Years' War", "Crusades"]
+      },
+      {
+        "question": "Who was the British Prime Minister during most of World War II?",
+        "correct": "Winston Churchill",
+        "false": ["Neville Chamberlain", "Margaret Thatcher", "Tony Blair"]
+      }
+    ],
+    "expert": [
+      {
+        "question": "In which year did the Battle of Hastings occur?",
+        "correct": "1066",
+        "false": ["1215", "1492", "1815"]
+      },
+      {
+        "question": "Which empire was centered in Constantinople?",
+        "correct": "Byzantine Empire",
+        "false": ["Roman Empire", "Ottoman Empire", "Persian Empire"]
+      }
+    ]
+  },
+
+  "geography": {
+    "easy": [
+      {
+        "question": "What is the capital of Germany?",
+        "correct": "Berlin",
+        "false": ["Munich", "Frankfurt", "Hamburg"]
+      },
+      {
+        "question": "Which country is famous for the Eiffel Tower?",
+        "correct": "France",
+        "false": ["Italy", "Spain", "Germany"]
+      }
+    ],
+    "intermediate": [
+      {
+        "question": "Which continent is Brazil located in?",
+        "correct": "South America",
+        "false": ["North America", "Europe", "Africa"]
+      },
+      {
+        "question": "Which city is the capital of Japan?",
+        "correct": "Tokyo",
+        "false": ["Osaka", "Kyoto", "Seoul"]
+      }
+    ],
+    "hard": [
+      {
+        "question": "Which desert is the largest in the world?",
+        "correct": "Sahara Desert",
+        "false": ["Gobi Desert", "Kalahari Desert", "Arabian Desert"]
+      },
+      {
+        "question": "Which river runs through Paris?",
+        "correct": "Seine",
+        "false": ["Danube", "Rhine", "Thames"]
+      }
+    ],
+    "expert": [
+      {
+        "question": "Which country has the most natural lakes?",
+        "correct": "Canada",
+        "false": ["Russia", "USA", "Brazil"]
+      },
+      {
+        "question": "Mount Kilimanjaro is located in which country?",
+        "correct": "Tanzania",
+        "false": ["Kenya", "Ethiopia", "Uganda"]
+      }
+    ]
+  },
+
+  "sport": {
+    "easy": [
+      {
+        "question": "Which sport does Lionel Messi play?",
+        "correct": "Football",
+        "false": ["Basketball", "Tennis", "Baseball"]
+      },
+      {
+        "question": "How many players are on a standard soccer team on the field?",
+        "correct": "11",
+        "false": ["9", "10", "12"]
+      }
+    ],
+    "intermediate": [
+      {
+        "question": "Which country won the FIFA World Cup in 2018?",
+        "correct": "France",
+        "false": ["Germany", "Brazil", "Argentina"]
+      },
+      {
+        "question": "Which sport uses a racket and shuttlecock?",
+        "correct": "Badminton",
+        "false": ["Tennis", "Squash", "Table Tennis"]
+      }
+    ],
+    "hard": [
+      {
+        "question": "Which athlete has won the most Olympic medals?",
+        "correct": "Michael Phelps",
+        "false": ["Usain Bolt", "Carl Lewis", "Mark Spitz"]
+      },
+      {
+        "question": "Which team has the most NBA championships?",
+        "correct": "Boston Celtics",
+        "false": ["LA Lakers", "Chicago Bulls", "Golden State Warriors"]
+      }
+    ],
+    "expert": [
+      {
+        "question": "In which year were the first modern Olympic Games held?",
+        "correct": "1896",
+        "false": ["1900", "1888", "1912"]
+      },
+      {
+        "question": "Which country invented cricket?",
+        "correct": "England",
+        "false": ["India", "Australia", "South Africa"]
+      }
+    ]
+  },
+
+  "movies": {
+    "easy": [
+      {
+        "question": "Who played Iron Man in the Marvel movies?",
+        "correct": "Robert Downey Jr.",
+        "false": ["Chris Evans", "Chris Hemsworth", "Mark Ruffalo"]
+      },
+      {
+        "question": "Which movie features dinosaurs in a theme park?",
+        "correct": "Jurassic Park",
+        "false": ["Avatar", "Jaws", "King Kong"]
+      }
+    ],
+    "intermediate": [
+      {
+        "question": "Who directed 'Titanic'?",
+        "correct": "James Cameron",
+        "false": ["Steven Spielberg", "Christopher Nolan", "Ridley Scott"]
+      },
+      {
+        "question": "Which film features the character Joker?",
+        "correct": "The Dark Knight",
+        "false": ["Inception", "Fight Club", "Gladiator"]
+      }
+    ],
+    "hard": [
+      {
+        "question": "Which film won Best Picture at the Oscars in 1994?",
+        "correct": "Forrest Gump",
+        "false": ["Pulp Fiction", "The Shawshank Redemption", "Braveheart"]
+      },
+      {
+        "question": "Who directed 'The Godfather'?",
+        "correct": "Francis Ford Coppola",
+        "false": ["Martin Scorsese", "Stanley Kubrick", "Alfred Hitchcock"]
+      }
+    ],
+    "expert": [
+      {
+        "question": "Which director made '2001: A Space Odyssey'?",
+        "correct": "Stanley Kubrick",
+        "false": ["Ridley Scott", "Christopher Nolan", "James Cameron"]
+      },
+      {
+        "question": "Which movie features the quote 'Here's looking at you, kid'?",
+        "correct": "Casablanca",
+        "false": ["Citizen Kane", "Gone with the Wind", "The Godfather"]
+      }
+    ]
+  },
+
+  "music": {
+    "easy": [
+      {
+        "question": "Who sings 'Blinding Lights'?",
+        "correct": "The Weeknd",
+        "false": ["Drake", "Ed Sheeran", "Justin Bieber"]
+      },
+      {
+        "question": "Which artist is known for 'Shake It Off'?",
+        "correct": "Taylor Swift",
+        "false": ["Adele", "Rihanna", "Dua Lipa"]
+      }
+    ],
+    "intermediate": [
+      {
+        "question": "Which band sang 'Smells Like Teen Spirit'?",
+        "correct": "Nirvana",
+        "false": ["Coldplay", "Queen", "The Beatles"]
+      },
+      {
+        "question": "Who released 'Rolling in the Deep'?",
+        "correct": "Adele",
+        "false": ["Beyoncé", "Lady Gaga", "Rihanna"]
+      }
+    ],
+    "hard": [
+      {
+        "question": "Which artist is known as the 'King of Pop'?",
+        "correct": "Michael Jackson",
+        "false": ["Elvis Presley", "Prince", "Stevie Wonder"]
+      },
+      {
+        "question": "Which band released 'Wonderwall'?",
+        "correct": "Oasis",
+        "false": ["Blur", "Radiohead", "Coldplay"]
+      }
+    ],
+    "expert": [
+      {
+        "question": "Which composer became deaf later in life but continued to write music?",
+        "correct": "Ludwig van Beethoven",
+        "false": ["Mozart", "Bach", "Chopin"]
+      },
+      {
+        "question": "Which band released the album 'The Dark Side of the Moon'?",
+        "correct": "Pink Floyd",
+        "false": ["Led Zeppelin", "The Beatles", "Queen"]
+      }
+    ]
+  }
+}

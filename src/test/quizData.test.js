@@ -1,0 +1,2 @@
+import { QuizData } from "../quizData";
+
