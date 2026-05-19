@@ -1,11 +1,10 @@
 import { Answers } from "./answers.js";
-import fs from "fs";
-
-const data = JSON.parse(fs.readFileSync("./data/defaultQuestions.json", "utf-8"))
+import data from "../data/defaultQuestions.json"
+console.log(data)
 
 export class QuizData {
     #questions = getQuestions();
-    #customQuestions = {}
+    #customQuestions = {};
 
     add(question, corrAnswer, falseAnswers, type) {
         if(!this.#customQuestions[type]) {
@@ -17,12 +16,12 @@ export class QuizData {
             obj.title = question;
             obj.answer = new Answers(corrAnswer, falseAnswers, type);
             this.#customQuestions[type].push(obj);
-        }
+        } 
         else {
-            throw new Error("That question already exists!")
+            throw new Error("That question already exists!");
         }
     }   
-
+    
     remove(question, type) {
         if(question === undefined || type === undefined) throw new Error("Missing required parameters");
         for(let i = 0; i < this.#customQuestions[type].length; i++) {
@@ -80,13 +79,4 @@ function checkAvailability(question, questionsData, type) {
 }
 
 const quiz = new QuizData();
-quiz.add("What is the capital city of Germany", "Berlin", ["Madrid", "Barcelona", "Pairs"] , "Geography");
-quiz.add("What is the capital city of France", "Berlin", ["Madrid", "Barcelona", "Pairs"] , "Geography");
-quiz.add("What is the capital city of Uruguay", "Berlin", ["Madrid", "Barcelona", "Pairs"] , "Geography");
-quiz.add("What is the capital city of Spain", "Berlin", ["Madrid", "Barcelona", "Pairs"] , "Geography");
-
-console.log(quiz.customQuestions);
-quiz.remove("What is the capital city of Germany", "Geography");
-quiz.remove("What is the capital city of Spain", "Geography");
-quiz.find("What is the capital city of Uruguay", "Geography");
-console.log(quiz.customQuestions);
+console.log(quiz.types);

@@ -1,0 +1,37 @@
+/* Default Styling */
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+}
+
+p {
+    margin: 0;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: "Outfit-Bold";
+    src: url(./assets/fonts/Outfit-Bold.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Outfit-Light";
+    src: url(./assets/fonts/Outfit-Light.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Outfit-Regular";
+    src: url(./assets/fonts/Outfit-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Outfit-Medium";
+    src: url(./assets/fonts/Outfit-Medium.ttf);
+    font-style: normal;
+}

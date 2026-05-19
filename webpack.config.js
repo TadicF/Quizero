@@ -11,11 +11,22 @@ export default {
     },
     devtool: "eval-source-map",
     devServer: {
-        watchFiles: ["./src/template.html"]
+        watchFiles: ["./src/template.html", "./src/pages/customQuestions.html", "./src/pages/defaultQuestions.html"]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/template.html",
+            filename: "index.html"
+        }),
+
+        new HtmlWebpackPlugin({
+            template: "./src/pages/customQuestions.html",
+            filename: "pages/customQuestions.html"
+        }),
+
+        new HtmlWebpackPlugin({
+            template: "./src/pages/defaultQuestions.html",
+            filename: "pages/defaultQuestions.html"
         }),
     ],
     module: {

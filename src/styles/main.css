@@ -1,0 +1,163 @@
+#mainBody {
+    grid-template-rows: 1fr 2fr 0.20fr;
+}
+
+#mainHeader {
+    position: relative;
+    background-color: rgba(96, 162, 150, 0.546);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 0 5px 10px rgba(74, 74, 74, 0.452);
+}
+
+.optionsSection {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+.optionsSection img {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.optionsSection img:hover {
+    scale: 1.05;
+}
+
+.profileContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    top: 10px;
+    left: 10px;
+}
+
+.profileContainer p {
+    font-family: "Outfit-Medium";
+    font-size: 1.5em;
+    align-self: self-end;
+    transition: all 0.5s ease;
+}
+
+.signUp {
+    cursor: pointer;
+}
+
+.signUp:hover {
+    scale: 1.05;
+}
+
+.appTitle {
+    background-color: rgba(96, 162, 150, 0.546);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    border: 2px solid black;
+    width: 35%;
+    transition: all 0.5s ease;
+    border-radius: 30px;
+    height: 50%;
+}
+
+.appTitle:hover {
+    scale: 1.1;
+}
+
+.appTitle p {
+    font-family: "Outfit-Bold";
+    font-size: 2.8em;
+}
+
+#mainMenu {
+    background-color: rgba(111, 164, 154, 0.48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit-Regular";
+}
+
+.selectorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    gap: 40px;
+    width: 60%;
+    height: 60%;
+}
+
+.selectorContainer > button {
+    background-color: rgba(0, 0, 0, 0.081);
+    width: 50%;
+    height: 75%;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgba(104, 104, 104, 0.531);
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.selectorContainer > button div {
+    background-color: rgba(0, 0, 0, 0.13);
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.selectorContainer > button div p {
+    font-family: "Outfit-Regular";
+    font-size: 1.2em    ;
+}
+
+.selectorContainer > button > p:first-child {
+    border-bottom: 1px solid black;
+}
+
+.selectorContainer > button:hover {
+    scale: 1.1;
+    background-color: rgba(0, 0, 0, 0.167);
+}
+
+.selectorContainer > button > p {
+    font-family: "Outfit-Bold";
+    font-size: 2.8em;
+    padding: 10px 0px;
+    justify-self: center;
+}
+
+#mainFooter {
+    background-color: rgba(111, 164, 154, 0.863);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainFooter div {
+    display: flex;
+    gap: 8px;
+}
+
+#mainFooter p {
+    font-family: "Outfit-Regular";
+    font-size: 1.2em;
+}
+
+#mainFooter a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: rgb(49, 49, 49);
+    transition: all 0.5s ease;
+}
