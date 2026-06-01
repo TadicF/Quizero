@@ -1,8 +1,7 @@
 import { Answers } from "./answers.js";
 import data from "../data/defaultQuestions.json"
-console.log(data)
 
-export class QuizData {
+export class QuizData { // refactor this so I can have separate Custom and Default classes, also I'll need a new class for keeping default questions and array of custom questions (classes)
     #questions = getQuestions();
     #customQuestions = {};
 
@@ -57,11 +56,11 @@ export class QuizData {
     }
 };
 
-function getQuestions() {
+function getQuestions() { // make it more specific so you only get questions by type, and difficulty
     const questions = {};
     
     for(let key in data) {
-        questions[key] = {}
+        //questions[key] = {}
         questions[key] = data[key];
     }
 

@@ -5,15 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Default Questions</title>
 </head>
-<body class="default">
-    <header>
-        <div>Quizero</div>
+<body id="questionsBody">
+    <header id="questionsHeader">
+        <div class="exitContainer">
+            <img src="../assets/icons/back.svg" alt="Back to Main Menu" width="50px" height="50px">
+            <a>Go Back</a>
+        </div>
+        <div class="iconContainer">
+            <img src="../assets/icons/appIcon.svg" alt="App Icon" width="130px" height="130px">
+            <p data-subject="history">History</p>
+        </div>
+        <div class="difficultyContainer">
+            <p>Mode</p>
+            <p data-mode="hard">HARD</p>
+        </div>
     </header>
-    <main>
-
+    <main id="questionsMain">
+        <div class="questionTitle">
+            <p>Which city is the capital of Japan?</p>
+        </div>
+        <div class="questionsContainer">
+            <div data-answer="Tokyo">
+                <div>A</div>
+                <div>Tokyo</div>
+            </div>
+            <div data-answer="">
+                <div>B</div>
+                <div></div>
+            </div>
+            <div data-answer="">
+                <div>C</div>
+                <div></div>
+            </div>
+            <div data-answer="">
+                <div>D</div>
+                <div></div>
+            </div>
+        </div>
     </main>
-    <footer>
-
+    <footer id="questionsFooter">
+        <div>Fun Fact: In 1895, the entire state of Ohio had only 2 cars.</div>
     </footer>
 </body>
 </html>

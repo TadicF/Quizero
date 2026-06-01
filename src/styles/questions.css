@@ -1,0 +1,156 @@
+#questionsBody {
+    grid-template-rows: 1.5fr 0.1fr;
+    grid-template-columns: 0.5fr 2.5fr; 
+}
+
+
+#questionsHeader {
+    grid-row: 1 / 3;
+    background-image: linear-gradient(to bottom right, rgb(155, 155, 155), rgb(255, 255, 255));
+    box-shadow: 0px 0px 10px 2px rgba(120, 120, 120, 0.902);
+    display: grid;
+    grid-template-rows: 0.2fr 2fr 1fr;
+    z-index: 10;
+}
+
+.exitContainer {
+    font-family: "Outfit-Medium";
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5em;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.exitContainer:hover {
+    scale: 1.05;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Outfit-Medium";
+    font-size: 2em;
+}
+
+.difficultyContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.difficultyContainer p:first-of-type {
+    font-family: "Outfit-Regular";
+    font-size: 2.3em;
+    padding: 0 20px;
+    border-bottom: 4px solid rgb(0, 0, 0);
+}
+
+.difficultyContainer p:nth-of-type(2) {
+    font-family: "Outfit-Bold";
+    font-size: 3.3em;
+}
+
+[data-mode="hard"] {
+    color: #FF3131;
+}
+
+[data-mode="easy"] {
+    color: #39FF14;
+}
+
+[data-mode="medium"] {
+    color: #FFFF33;
+}
+
+[data-mode="expert"] {
+    color: #BC13FE;
+}
+
+#questionsMain {
+    background-image: linear-gradient(rgb(155, 155, 155), rgb(255, 255, 255));
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-rows: 1.5fr 5fr;
+}
+
+.questionTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit-Medium";
+    font-size: 2.3em;
+    background-color: rgba(212, 212, 212, 0.508);
+    box-shadow: 0px 0px 2px 2px rgba(123, 123, 123, 0.458);
+}
+
+.questionTitle p {
+    border-bottom: 3px solid black;
+    padding: 8px 10px
+}
+
+.questionsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 60px;
+}
+
+.questionsContainer > div {
+    border: 3px solid rgba(0, 0, 0, 0.691);
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.questionsContainer > div:hover {
+    scale: 1.05;
+    opacity: 0.9;
+    border-color: white;
+}
+
+.questionsContainer > div div:nth-of-type(1) {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-family: "Outfit-Bold";
+    font-size: 1.5em;
+}
+
+.questionsContainer > div div:nth-of-type(2) {
+    font-family: "Outfit-Medium";
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+/* example */
+[data-answer="Tokyo"] {
+    background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url(../assets/images/cities/tokyo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#questionsFooter {
+    background-color: rgba(203, 203, 203, 0.581);
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit-Light";
+    font-size: 1.3em;
+}

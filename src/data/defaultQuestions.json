@@ -12,7 +12,7 @@
         "false": ["World War I", "Cold War", "Vietnam War"]
       }
     ],
-    "intermediate": [
+    "medium": [
       {
         "question": "Who was the leader of the Mongol Empire?",
         "correct": "Genghis Khan",
@@ -63,7 +63,7 @@
         "false": ["Italy", "Spain", "Germany"]
       }
     ],
-    "intermediate": [
+    "medium": [
       {
         "question": "Which continent is Brazil located in?",
         "correct": "South America",
@@ -101,6 +101,10 @@
     ]
   },
 
+  "science": {
+
+  },
+
   "sport": {
     "easy": [
       {
@@ -114,7 +118,7 @@
         "false": ["9", "10", "12"]
       }
     ],
-    "intermediate": [
+    "medium": [
       {
         "question": "Which country won the FIFA World Cup in 2018?",
         "correct": "France",
@@ -165,7 +169,7 @@
         "false": ["Avatar", "Jaws", "King Kong"]
       }
     ],
-    "intermediate": [
+    "medium": [
       {
         "question": "Who directed 'Titanic'?",
         "correct": "James Cameron",
@@ -216,7 +220,7 @@
         "false": ["Adele", "Rihanna", "Dua Lipa"]
       }
     ],
-    "intermediate": [
+    "medium": [
       {
         "question": "Which band sang 'Smells Like Teen Spirit'?",
         "correct": "Nirvana",

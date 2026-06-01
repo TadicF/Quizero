@@ -37,6 +37,216 @@
                 </div>
             </button>
         </div>
+        
+        <div class="customContainer">
+            <div class="savedQuizzes">
+                <div>
+                    <img src="./assets/icons/saved.svg" alt="Saved" width="50px" height="50px">
+                    <p>Saved</p>
+                </div>
+            </div>
+            <div class="newQuiz">
+                <div>
+                    <img src="./assets/icons/new.svg" alt="New" width="50px" height="50px">
+                    <p>New</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="savedContainer">
+            <div>
+                <p>Category</p>
+                <p>Mode</p>
+                <p>Title</p>
+                <p>Questions</p>
+            </div>
+            <div>
+                <p data-category="history">History</p>
+                <p data-mode="hard">HARD</p>
+                <p data-title="">Not made for weak</p>
+                <p data-count>20</p>
+            </div>
+            <div>
+                <p>History</p>
+                <p>HARD</p>
+                <p>Not made for weak</p>
+                <p>20</p>
+            </div><div>
+                <p>History</p>
+                <p>HARD</p>
+                <p>Not made for weak</p>
+                <p>20</p>
+            </div><div>
+                <p>History</p>
+                <p>HARD</p>
+                <p>Not made for weak</p>
+                <p>20</p>
+            </div><div>
+                <p>History</p>
+                <p>HARD</p>
+                <p>Not made for weak</p>
+                <p>20</p>
+            </div><div>
+                <p>History</p>
+                <p>HARD</p>
+                <p>Not made for weak</p>
+                <p>20</p>
+            </div><div>
+                <p>History</p>
+                <p>HARD</p>
+                <p>Look up how to scroll to fit more</p>
+                <p>20</p>
+            </div>
+            <div>
+                <p>History</p>
+                <p>HARD</p>
+                <p>Look up how to scroll to fit more</p>
+                <p>20</p>
+            </div>
+            <div>
+                <p>History</p>
+                <p>HARD</p>
+                <p>Look up how to scroll to fit more</p>
+                <p>20</p>
+            </div>
+        </div>
+
+        <div class="newContainer">
+            <form id="newQuizForm" action="https://httpbin.org/post" method="post">
+                <div class="titleForm">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" minlength="3" maxlength="20">      
+                </div>
+                <div class="modeForm">
+                    <div>
+                        <p>Mode</p>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="easyMode">Easy</label>
+                            <input type="radio" name="mode" id="easyMode" value="easy">
+                        </div>
+                        <div>
+                            <label for="mediumMode">Medium</label>
+                            <input type="radio" name="mode" id="mediumMode" value="medium">
+                        </div>
+                        <div>
+                            <label for="hardMode">Hard</label>
+                            <input type="radio" name="mode" id="hardMode" value="hard">
+                        </div>
+                        <div>
+                            <label for="expertMode">Expert</label>
+                            <input type="radio" name="mode" id="expertMode" value="expert">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="categoryForm">
+                    <div>
+                        <p>Category</p>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="historyCat">History</label>
+                            <input type="radio" name="category" id="historyCat" value="history">
+                        </div>
+                        <div>
+                            <label for="geographyCat">Geography</label>
+                            <input type="radio" name="category" id="geographyCat" value="geography">
+                        </div>
+                        <div>
+                            <label for="scienceCat">Science</label>
+                            <input type="radio" name="category" id="scienceCat" value="science">
+                        </div>
+                        <div>
+                            <label for="sportCat">Sport</label>
+                            <input type="radio" name="category" id="sportCat" value="sport">
+                        </div>
+                        <div>
+                            <label for="moviesCat">Movies</label>
+                            <input type="radio" name="category" id="moviesCat" value="movies">
+                        </div>
+                        <div>
+                            <label for="musicCat">Music</label>
+                            <input type="radio" name="category" id="musicCat" value="music">
+                        </div>
+                        <div>
+                            <label for="unspecifiedCat">Unspecified</label>
+                            <input type="radio" name="category" id="unspecifiedCat" value="unspecified">
+                        </div>
+                    </div>
+                </div>
+                <div class="questionsForm">
+                    <div class="question">
+                        <div>
+                            <label for="questionName">Question</label>
+                            <input type="text" name="questionsName" id="questionName" minlength="6">
+                        </div> 
+                        <div>
+                            <label for="correctAnswer">Answer</label>
+                            <input type="text" name="correctAnswer" id="correctAnswer">
+                        </div>
+                        <div>
+                            <label for="falseAnswers">False Answers</label>
+                            <div>
+                                  <input type="text" name="falseAnswers" id="falseAnswers">
+                                  <input type="text" name="falseAnswers" id="falseAnswers">
+                                  <input type="text" name="falseAnswers" id="falseAnswers">
+                            </div>
+                        </div>
+                    </div>      
+                    <button type="button">Add</button>
+                </div>
+                <button type="submit" class="addQuizBtn">Finish</button>
+            </form>
+        </div>
+
+        <div class="defaultContainer">
+            <div class="defaultCategory">
+                <p>Select a Category</p>
+            </div>
+            <div class="categoryContainer">
+                <div class="historyCat">
+                    <p>History</p>
+                </div>
+                <div class="geographyCat">
+                    <p>Geography</p>
+                </div>
+                <div class="scienceCat">
+                    <p>Science</p>
+                </div>
+                <div class="sportCat">
+                    <p>Sport</p>
+                </div>
+                <div class="moviesCat">
+                    <p>Movies</p>
+                </div>
+                <div class="musicCat">
+                    <p>Music</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="diffSelectContainer">
+            <div>
+                <p>Select a Difficulty</p>
+            </div>
+
+            <div class="difficultySelector">
+                <div class="easyDifficulty">
+                    <p>Easy</p>
+                </div>
+                <div class="mediumDifficulty">
+                    <p>Medium</p>
+                </div>
+                <div class="hardDifficulty">
+                    <p>Hard</p>
+                </div>
+                <div class="expertDifficulty">
+                    <p>Expert</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer id="mainFooter">
         <div>

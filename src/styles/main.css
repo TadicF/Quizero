@@ -1,10 +1,12 @@
 #mainBody {
-    grid-template-rows: 1fr 2fr 0.20fr;
+    grid-template-rows: 0.4fr 2fr 0.2fr;
 }
+
+/* Header */
 
 #mainHeader {
     position: relative;
-    background-color: rgba(96, 162, 150, 0.546);
+    background-image: linear-gradient(to bottom right, rgb(155, 155, 155), rgb(255, 255, 255));
     justify-content: center;
     align-items: center;
     display: flex;
@@ -51,17 +53,12 @@
 }
 
 .appTitle {
-    background-color: rgba(96, 162, 150, 0.546);
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    border: 2px solid black;
-    width: 35%;
     transition: all 0.5s ease;
-    border-radius: 30px;
-    height: 50%;
 }
 
 .appTitle:hover {
@@ -73,16 +70,18 @@
     font-size: 2.8em;
 }
 
+/* Main Menu */
+
 #mainMenu {
-    background-color: rgba(111, 164, 154, 0.48);
+    background-image: linear-gradient(rgb(218, 218, 218), rgb(255, 255, 255), rgba(218, 218, 218));
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Outfit-Regular";
+    
 }
 
 .selectorContainer {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;   
     gap: 40px;
@@ -136,8 +135,417 @@
     justify-self: center;
 }
 
+.customContainer {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.238);
+    width: 60%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.savedQuizzes {
+    border-right: 3px solid rgb(153, 153, 153);
+}
+
+.savedQuizzes div:first-of-type,  .newQuiz div:first-of-type {
+    font-family: 'Outfit-Medium';
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.savedQuizzes div:first-of-type:hover,  .newQuiz div:first-of-type:hover {
+    background-color: rgba(128, 128, 128, 0.518);
+}
+
+.savedContainer {
+    display: none;
+    grid-template-rows: repeat(auto-fit, 50px);
+    background-color: rgba(0, 0, 0, 0.238);
+    width: 60%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: auto;
+    scrollbar-color: #cdc6c683 #00000042;
+}
+
+.savedContainer div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2.5fr 0.8fr;
+    justify-items: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: "Outfit-Regular";
+    font-size: 1.2em;
+    border-bottom: 3px solid rgb(153, 153, 153);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.savedContainer div:nth-of-type(1) {
+    font-family: 'Outfit-Medium';
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-bottom: 3px solid rgb(153, 153, 153);
+}
+
+.savedContainer > div:not(:first-child):hover {
+    background-color: rgba(128, 128, 128, 0.399);
+}
+
+.newContainer {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.238);
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: auto;
+    scrollbar-color: #cdc6c683 #00000042;
+}
+
+#newQuizForm {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr 0.5fr;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit-Regular';
+}
+
+.titleForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 2.2em;
+    font-family: "Outfit-Medium";
+    border-bottom: 3px solid rgba(0, 0, 0, 0.253);
+}
+
+.titleForm input {
+    width: 50%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border: none;
+    border-radius: 20px;
+    font-family: "Outfit-Regular";
+    transition: all 0.5s ease;
+    padding: 5px 5px;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.titleForm input:focus {
+    outline: none;
+}
+
+.modeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modeForm p {
+    font-family: 'Outfit-Medium';
+    font-size: 2em;
+}
+
+.modeForm > div:nth-of-type(2) {
+    display: flex;
+    gap: 20px;
+    font-size: 1.3em
+}
+
+.modeForm input {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.categoryForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoryForm p {
+    font-family: 'Outfit-Medium';
+    font-size: 2em;
+}
+
+.categoryForm > div:nth-of-type(2) {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+.categoryForm input {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.questionsForm {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    gap: 10px;
+}
+
+.question > div:nth-of-type(1) input {
+    width: 400px;
+}
+
+.questionsForm button {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    font-family: "Outfit-Medium";
+    font-size: 2em;
+    padding: 10px 20px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+    color: white;
+}
+
+.questionsForm button:hover {
+    scale: 1.03;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.question input {
+    background-color: rgba(255, 255, 255, 0.705);
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+    padding: 5px 5px;
+    font-family: "Outfit-Regular";
+    transition: all 0.5s ease;
+    font-size: 1em;
+    text-align: center;
+}
+
+.question input:focus {
+    outline: none;
+}
+
+.question div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question > div:nth-of-type(3) div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.question label {
+    font-family: "Outfit-Medium";
+    font-size: 1.3em;
+}
+
+#newQuizForm button[type="submit"] {
+    width: 30%;
+    height: 50%;
+    border-radius: 20px;
+    justify-self: center;
+    color: white;
+    background-color: black;
+    border: none;
+    font-family: "Outfit-Medium";
+    font-size: 2em;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+#newQuizForm button[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+
+.defaultContainer {
+    display: none;
+    grid-template-rows: 1fr 3fr;
+    background-color: rgba(0, 0, 0, 0.103);
+    width: 65%;
+    height: 100%;
+}
+
+.defaultCategory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit-Bold";
+    font-size: 2.5em;
+}
+
+.categoryContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 30px 20px 30px;
+}
+
+.categoryContainer > div {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit-Bold';
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.categoryContainer > div:hover {
+    scale: 1.05;
+    opacity: 0.8;
+}
+
+.scienceCat {
+    background: 
+    linear-gradient(rgba(255, 252, 84, 0.437), rgba(234, 118, 9, 0.825)),
+    url(../assets/images/categories/science.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.historyCat {
+    background: 
+    linear-gradient(rgba(239, 130, 130, 0.254), rgba(91, 0, 0, 0.594)),
+    url(../assets/images/categories/history.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.geographyCat {
+    background: 
+    linear-gradient(rgba(92, 161, 230, 0.437), rgba(14, 43, 148, 0.624)),
+    url(../assets/images/categories/geography.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sportCat {
+    background: 
+    linear-gradient(rgba(174, 235, 204, 0.396), rgba(12, 132, 40, 0.811)),
+    url(../assets/images/categories/sport.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.musicCat {
+    background: 
+    linear-gradient(rgba(255, 138, 255, 0.58), rgba(82, 0, 95, 0.681)),
+    url(../assets/images/categories/music.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.moviesCat {
+    background: 
+    linear-gradient(rgba(153, 109, 16, 0.396), rgba(53, 152, 140, 0.559)),
+    url(../assets/images/categories/movies.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.diffSelectContainer {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    background-color: rgba(0, 0, 0, 0.103);
+    width: 65%;
+    height: 100%;
+}
+
+.diffSelectContainer > div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit-Bold";
+    font-size: 2.5em;
+}
+
+.difficultySelector {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 30px 20px 30px;
+}
+
+.difficultySelector > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.difficultySelector > div:hover {
+    scale: 1.05;
+    opacity: 0.8;
+}
+
+.difficultySelector > div p:first-of-type {
+    font-family: "Outfit-Medium";
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.easyDifficulty {
+    background: linear-gradient(rgb(0, 255, 0), rgb(8, 160, 0));
+    height: 60%;
+}
+
+.mediumDifficulty {
+    background: linear-gradient(yellow, orange);
+    height: 70%;
+}
+
+.hardDifficulty {
+    background: linear-gradient(rgb(255, 0, 0), rgb(103, 0, 0));
+    height: 80%;
+}
+
+.expertDifficulty {
+    background: linear-gradient(rgb(230, 43, 255), rgb(77, 0, 103));
+    height: 90%;
+}
+
+/* Footer */
+
 #mainFooter {
-    background-color: rgba(111, 164, 154, 0.863);
+    background-color: rgba(0, 0, 0, 0.52);
     display: flex;
     justify-content: center;
     align-items: center;
