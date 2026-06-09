@@ -77,5 +77,4 @@ function checkAvailability(question, questionsData, type) {
     return true;
 }
 
-const quiz = new QuizData();
-console.log(quiz.types);
+export const quiz = new QuizData()

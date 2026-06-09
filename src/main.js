@@ -4,8 +4,8 @@ import "./styles/questions.css"
 import "./styles/defaultQuestions.css"
 import { QuizData } from "./modules/quizData.js"
 import { domController } from "./modules/domController.js";
+import { quiz } from "./modules/quizData.js"
 
-export const quiz = new QuizData();
-domController.init();
+domController.init(quiz);
 
 

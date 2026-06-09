@@ -6,7 +6,7 @@
 
 #mainHeader {
     position: relative;
-    background-image: linear-gradient(to bottom right, rgb(155, 155, 155), rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom right, rgb(123, 123, 123), rgb(196, 196, 196));
     justify-content: center;
     align-items: center;
     display: flex;
@@ -77,15 +77,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
+}
+
+.backContainer {
+    font-family: "Outfit-Medium";
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5em;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.backContainer:hover {
+    scale: 1.05;
 }
 
 .selectorContainer {
-    display: none;
-    justify-content: center;
+    display: flex;
+    justify-items:center;
     align-items: center;   
     gap: 40px;
-    width: 60%;
+    width: 50%;
     height: 60%;
 }
 
@@ -142,6 +159,12 @@
     width: 60%;
     height: 80%;
     border-radius: 10px;
+    position: relative;
+}
+
+.customContainer .backContainer {
+    position: absolute;
+    top: -50px;
 }
 
 .savedQuizzes {
@@ -174,6 +197,12 @@
     border-radius: 10px;
     overflow: auto;
     scrollbar-color: #cdc6c683 #00000042;
+    position: relative;
+}
+
+.savedContainer .backContainer {
+    position: absolute;
+    top: 0px;
 }
 
 .savedContainer div {
@@ -478,7 +507,7 @@
 }
 
 .diffSelectContainer {
-    display: grid;
+    display: none;
     grid-template-rows: 1fr 3fr;
     background-color: rgba(0, 0, 0, 0.103);
     width: 65%;
@@ -533,7 +562,7 @@
 }
 
 .hardDifficulty {
-    background: linear-gradient(rgb(255, 0, 0), rgb(103, 0, 0));
+    background: linear-gradient(rgb(255, 77, 77), rgb(103, 0, 0));
     height: 80%;
 }
 

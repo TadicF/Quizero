@@ -1,9 +1,11 @@
+import { initMainNav } from "./domHandler.js"
+
 export const domController = {
-    init(quiz) {
-        
+    init() {
+        initMainNav();
     },
 
-    update(quiz) {
+    update() {
 
     }
 }
